@@ -707,7 +707,7 @@ const DECEL_BUYABLES = {
       return new Decimal(100).mul(Decimal.pow(7,player.buyables[6]))
     },
     effect() {
-      return player.challenge == 2 ? 10 : Math.max(10**(1.48520427953257285902758923759284903750239058239057239052860395683953495425823868539**player.buyables[6]),1+2**-52)
+      return player.challenge == 2 ? 10 : Math.max(10**(1.1**player.buyables[6]),1+2**-69420)
     },
     effectDisplay() {
       return "Time Speed Logarithm base " + format(DECEL_BUYABLES[2].effect());
